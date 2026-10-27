@@ -1,0 +1,10 @@
+{% include "header.html" %}
+<h1>About</h1>
+<p>Pages are HTML templates in <code>templates/</code>: <code>&#123;&#123; value }}</code> is
+escaped, <code>&#123;&#123;&#123; value }}}</code> is raw, and <code>&#123;% include %}</code> and
+<code>&#123;% if %}</code> work the way you'd expect.</p>
+<p>Files in <code>public/</code> are served as they are, any type (images, fonts, PDF,
+video), streamed straight from disk.</p>
+<p>Every response carries a strict Content-Security-Policy, <code>nosniff</code> and
+frame-deny headers. The process recycles itself before its memory can run out.</p>
+{% include "footer.html" %}

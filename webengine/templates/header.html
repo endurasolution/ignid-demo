@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ title }} · Ignid Webengine</title>
+<link rel="icon" href="/images/logo.png">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<nav>
+  <a class="brand" href="/"><img src="/images/logo.png" alt="" width="24" height="24">Ignid</a>
+  <a href="/"{% if nav_home %} class="on"{% endif %}>Home</a>
+  <a href="/hello"{% if nav_hello %} class="on"{% endif %}>Hello</a>
+  <a href="/guestbook"{% if nav_guestbook %} class="on"{% endif %}>Guestbook</a>
+  <a href="/users"{% if nav_users %} class="on"{% endif %}>Users</a>
+  <a href="/about"{% if nav_about %} class="on"{% endif %}>About</a>
+</nav>
+<main>

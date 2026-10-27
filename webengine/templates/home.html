@@ -1,0 +1,16 @@
+{% include "header.html" %}
+<h1>Ignid Webengine</h1>
+<p>This site runs on a native executable written entirely in <strong>Ignid</strong>:
+the HTTP parser, the template engine, the static file server and the
+hardening are all Ignid code, running on raw Winsock.</p>
+<ul>
+  <li><a href="/hello?name=Ignid">/hello?name=Ignid</a>: a template with an escaped variable</li>
+  <li><a href="/users">/users</a>: a list built from a partial template</li>
+  <li><a href="/guestbook">/guestbook</a>: a form, POST, and a template if/else</li>
+  <li><a href="/users/42">/users/42</a>: path parameter, JSON</li>
+  <li><a href="/api/status">/api/status</a>: JSON status</li>
+  <li><a href="/crash">/crash</a>: a handler that throws, so you get a 500 while the server stays up</li>
+  <li><a href="/broken-template">/broken-template</a>: a template error (start with <code>--debug</code> to see details)</li>
+</ul>
+<p><img src="/images/logo.png" alt="Ignid logo" width="64" height="64"> PNG served straight from disk.</p>
+{% include "footer.html" %}

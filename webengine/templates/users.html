@@ -1,0 +1,9 @@
+{% include "header.html" %}
+<h1>Users ({{ count }})</h1>
+<table>
+  <tr><th>#</th><th>Name</th></tr>
+{{{ rows }}}
+</table>
+<p>Each row is <code>templates/user_row.html</code>, rendered once per user with
+<code>render_text()</code>. The last name contains HTML, and the template shows it as text.</p>
+{% include "footer.html" %}

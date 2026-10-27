@@ -10,6 +10,7 @@ compiles to a standalone `.exe` — no interpreter, no runtime, no dependencies.
 | **Calculator** | [`calculator.ig`](calculator.ig) | Interactive CLI calculator with history, memory, float support, and error handling |
 | **JSON Saver** | [`json_saver.ig`](json_saver.ig) | Build key/value records and persist them as `.json` files |
 | **File Tool** | [`file_tool.ig`](file_tool.ig) | Swiss-army-knife file utility — read, write, copy, search, and get stats |
+| **Webengine** | [`webengine/`](webengine/) | Flask-style web framework and server: routes, HTML templates, static files of any type, debug mode, security hardening, a supervisor, and a 67-case attack test suite |
 
 ## How to Run
 

@@ -1,0 +1,13 @@
+{% include "header.html" %}
+<h1>Guestbook</h1>
+{% if message %}
+<p>You wrote:</p>
+<blockquote>{{ message }}</blockquote>
+{% else %}
+<p>Nothing posted yet.</p>
+{% endif %}
+<form method="post" action="/guestbook">
+  <input name="message" maxlength="500" required placeholder="Say something">
+  <button>Send</button>
+</form>
+{% include "footer.html" %}
